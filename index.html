@@ -1,14 +1,46 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://Alex7i7o.github.io/juego-parejas/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="https://Alex7i7o.github.io/juego-parejas/assets/index-nCU-KRWu.js"></script>
-    <link rel="stylesheet" crossorigin href="https://Alex7i7o.github.io/juego-parejas/assets/index-CrYBktwj.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego Parejas</title>
+  <meta name="description" content="">
+  
+  <!--Estilo-->
+  
+  <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Scripts-->
+
+  <script type="module" crossorigin src="https://Alex7i7o.github.io/juego-parejas/assets/index-C9Prlgo0.js"></script>
+  <link rel="stylesheet" crossorigin href="https://Alex7i7o.github.io/juego-parejas/assets/index-DvpcSgTw.css">
+</head>
+
+<body>
+    <h1>Juego de Parejas</h1>
+    <p>Primero introduzca las dimensiones de su tablero y luego busque las tarjetas con el mismo color</p>
+    
+    <div class="container">
+      <div class="inputs">
+        <label for="rowsInput">Filas</label>
+        <input type="number" id="rowsInput">
+      </div>
+      <div class="inputs">
+        <label for="colsInput">Columnas</label>
+        <input type="number" id="colsInput">
+      </div>
+    </div>
+      
+    <div class="container">
+      <button id="startButton">Iniciar Juego</button>
+      <button id="reiniciar">Reiniciar Juego</button>
+    </div>
+    
+
+    <section id="game"></section>
+    
+</body>
 </html>
